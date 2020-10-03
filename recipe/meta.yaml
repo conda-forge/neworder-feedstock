@@ -31,9 +31,10 @@ requirements:
 test:
   imports:
     - neworder
+    - pytest
   commands:
     - pip check
-    - python setup.py test
+    - pytest -sv
   requires:
     - pip
 
