@@ -1,6 +1,6 @@
 {% set name = "neworder" %}
-{% set version = "0.0.6" %}
-{% set sha256 = "43eb1fdc8aff099a4a40ae0b1011e7f676780157731c00e03594c531f151c57b" %}
+{% set version = "0.0.8" %}
+{% set sha256 = "fb94ebb7be44c1abc519bab25525e7178147bc1067928f6bfc2d1415b0948261" %}
 
 
 package:
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,13 +21,12 @@ requirements:
   host:
     - pip
     - pybind11 >=2.5.0
-    - pytest
     - pytest-runner
     - python
   run:
+    - numpy >=1.19.1
+    - pandas >=1.0.5
     - python
-    - numpy
-    - pandas
 
 test:
   imports:
