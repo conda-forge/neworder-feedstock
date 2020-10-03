@@ -1,6 +1,6 @@
 {% set name = "neworder" %}
-{% set version = "0.0.7" %}
-{% set sha256 = "9b8047f02262e49c3754750735ab39027d104299e148238ed69e852176646dfd" %}
+{% set version = "0.0.8" %}
+{% set sha256 = "fb94ebb7be44c1abc519bab25525e7178147bc1067928f6bfc2d1415b0948261" %}
 
 
 package:
