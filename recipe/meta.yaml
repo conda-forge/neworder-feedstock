@@ -33,7 +33,7 @@ test:
     - neworder
   commands:
     - pip check
-    - pytest -sv
+    - python setup.py test
   requires:
     - pip
 
