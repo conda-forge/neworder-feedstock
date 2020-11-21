@@ -1,6 +1,6 @@
 {% set name = "neworder" %}
-{% set version = "0.0.8" %}
-{% set sha256 = "fb94ebb7be44c1abc519bab25525e7178147bc1067928f6bfc2d1415b0948261" %}
+{% set version = "0.1.2" %}
+{% set sha256 = "9ecf71672bf2d9441f0417b5bdf27628cc4850591e1f0fe3e3e80134a7baf6ad" %}
 
 
 package:
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
