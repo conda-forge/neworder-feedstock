@@ -40,7 +40,7 @@ about:
   home: https://neworder.readthedocs.io
   summary: A dynamic microsimulation framework
   license: MIT
-  license_file: LICENCE
+  license_file: LICENCE.md
 
 extra:
   recipe-maintainers:
