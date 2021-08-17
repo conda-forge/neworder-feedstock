@@ -26,7 +26,7 @@ requirements:
   run:
     - numpy >=1.19.1
     - pandas >=1.0.5
-    - scipy >=1.6.2
+    - scipy
     - python
 
 test:
