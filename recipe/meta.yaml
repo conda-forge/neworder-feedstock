@@ -1,6 +1,6 @@
 {% set name = "neworder" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "53f332309ef050751ca52324ad9f2cbd7becbf0eaf27e67786fb651ffa31d224" %}
+{% set version = "1.0.1" %}
+{% set sha256 = "647936bf347d05aecd76233c587d9e15157bbe864a6856e6a9990251e2e2daa2" %}
 
 
 package:
@@ -26,6 +26,7 @@ requirements:
   run:
     - numpy >=1.19.1
     - pandas >=1.0.5
+    - scipy
     - python
 
 test:
