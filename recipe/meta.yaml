@@ -1,6 +1,6 @@
 {% set name = "neworder" %}
-{% set version = "1.1.1" %}
-{% set sha256 = "99106fca09ce93dcbe53ff551e9f278a9dbe7c82c4e619bfc609496fca90a024" %}
+{% set version = "1.2.0" %}
+{% set sha256 = "940bfbe0ac5745c13cc4abc22627ba457e5d0d32703ac9a06574d2ae2e82e38f" %}
 
 
 package:
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - pybind11 >=2.5.0
+    - numpy >=1.19.1
     - pytest-runner
     - python
   run:
