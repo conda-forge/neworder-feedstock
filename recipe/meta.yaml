@@ -32,7 +32,7 @@ requirements:
     - geopandas
     - networkx
     - osmnx
-    - gdal
+    - libgdal
 
 test:
   imports:
