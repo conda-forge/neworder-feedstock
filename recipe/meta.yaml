@@ -33,6 +33,7 @@ requirements:
     - networkx
     - osmnx
     - libgdal
+    - geos
 
 test:
   imports:
