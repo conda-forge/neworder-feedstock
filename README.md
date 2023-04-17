@@ -1,11 +1,11 @@
-About neworder
-==============
+About neworder-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/neworder-feedstock/blob/main/LICENSE.txt)
 
 Home: https://neworder.readthedocs.io
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/neworder-feedstock/blob/main/LICENSE.txt)
 
 Summary: A dynamic microsimulation framework
 
@@ -282,7 +282,4 @@ Feedstock Maintainers
 =====================
 
 * [@virgesmith](https://github.com/virgesmith/)
-
-
-<!-- dummy commit to enable rerendering -->
 
