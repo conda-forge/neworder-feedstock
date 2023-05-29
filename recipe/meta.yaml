@@ -23,13 +23,13 @@ requirements:
     - pybind11 >=2.5.0
     - numpy >=1.19.1
     - pytest-runner
-    - python
+    - python >= 3.10
   run:
     - numpy >=1.19.1
     - pandas >=1.0.5
     - pandas-stubs
     - scipy
-    - python
+    - python >= 3.10
 
 test:
   imports:
