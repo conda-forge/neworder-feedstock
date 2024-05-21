@@ -10,13 +10,14 @@ source:
   sha256: 4fddfc2eb4d51b0054a28fe2004e56e7de1a6b41539ad9f563b1ba0c82064511
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<310]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
@@ -33,7 +34,6 @@ requirements:
     - pandas >=1.5.0
     - pandas-stubs
     - scipy >=1.9.3
-    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
