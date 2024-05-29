@@ -1,5 +1,5 @@
 {% set name = "neworder" %}
-{% set version = "1.4.1" %}
+{% set version = "1.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/neworder-{{ version }}.tar.gz
-  sha256: 4fddfc2eb4d51b0054a28fe2004e56e7de1a6b41539ad9f563b1ba0c82064511
+  sha256: b0436dba22043785c384f704c863c623fb4510dd508cae162ce578f38505b20f
 
 build:
-  number: 2
+  number: 0
   skip: true  # [py<310]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -29,6 +29,7 @@ requirements:
     - pytest-runner
     - pip
   run:
+    - numpy
     - matplotlib-base >=3.6.2
     - python
     - pandas >=1.5.0
