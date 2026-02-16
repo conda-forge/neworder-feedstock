@@ -1,5 +1,5 @@
 {% set name = "neworder" %}
-{% set version = "1.4.4" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/neworder-{{ version }}.tar.gz
-  sha256: 5b7590c39628138455125c52002f7d1dd10db5ac911820b51efa388ccc361216
+  sha256: cd8c82f0d3199662033a6183ccf66f743618462a4d0b6753b2f94ae7ce2e14da
 
 build:
   number: 0
