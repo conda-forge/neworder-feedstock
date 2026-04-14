@@ -1,5 +1,5 @@
 {% set name = "neworder" %}
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/neworder-{{ version }}.tar.gz
-  sha256: cd8c82f0d3199662033a6183ccf66f743618462a4d0b6753b2f94ae7ce2e14da
+  sha256: 5a527522e90b06a29d37177eb36298d8886d3f16d3bf15ccec8dc75e81f33b05
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - numpy
     - matplotlib-base >=3.6.2
     - python
-    - pandas >=1.5.0
+    - pandas >=2.3.3
     - pandas-stubs
     - scipy >=1.9.3
 
