@@ -1,0 +1,52 @@
+schema_version: 1
+
+context:
+  version: "1.7.1"
+
+package:
+  name: neworder
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/n/neworder/neworder-${{ version }}.tar.gz
+  sha256: 436640b4152804206df5edc702bef0b7850950375fda0de9b609e4cf8d8d3621
+
+build:
+  number: 1
+  skip: match(python, "<3.12")
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  build:
+    - ${{ compiler("cxx") }}
+    - ${{ compiler("c") }}
+    - ${{ stdlib("c") }}
+  host:
+    - python
+    - setuptools >=42
+    - pybind11 >=2.13
+    - numpy
+    - pip
+  run:
+    - python
+    - matplotlib-base >=3.6.2
+    - numpy
+    - pandas >=2.3.3
+    - pandas-stubs
+    - scipy >=1.9.3
+
+tests:
+  - python:
+      imports:
+        - neworder
+      pip_check: true
+
+about:
+  summary: A dynamic microsimulation framework
+  license: MIT
+  license_file: LICENCE.md
+  homepage: https://neworder.readthedocs.io/
+
+extra:
+  recipe-maintainers:
+    - ocefpaf
