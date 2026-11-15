@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.7.2"
+  version: "1.8.0"
 
 package:
   name: neworder
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/neworder/neworder-${{ version }}.tar.gz
-  sha256: fe5e334dc0e4fad335f3976f5cd5506ede52f511e55779f50c50c8112e33586f
+  sha256: e05bed04891436419389c9eccf6f6fc329633e1fafb645c53fa8ed75622825dd
 
 build:
   number: 0
